@@ -36,7 +36,7 @@ LVIclust <- function(
   #random + test
   set.seed(666)
   if(ncluster==1){
-    stop("Clustering can´t be less than 2")
+    stop("Clustering cannot be less than 2")
   }
   #folder
   dir.create(output_folder,showWarnings = F, recursive = T)
@@ -93,7 +93,7 @@ LVIclust <- function(
   # CHECK CLUSTER NUMBER
 
   if(ncluster <= 1){
-    stop("ncluster can´t be less than 2")
+    stop("ncluster canÂ´t be less than 2")
   }else if(is.character(ncluster)){
     stop("ncluster should be numeric")
   }
